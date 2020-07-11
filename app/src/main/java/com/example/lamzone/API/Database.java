@@ -1,24 +1,21 @@
 package com.example.lamzone.API;
 
-import com.example.lamzone.model.Reunion;
+import com.example.lamzone.model.Meeting;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class Database {
+public class Database {public static List<Meeting> meetingList = Arrays.asList(
 
-    private static List<Reunion> REUNIONCREATED = new ArrayList<>();/*Arrays.asList(
-            new Reunion(1, 14, 00, "vendredi", 31, "janvier", 2020, "Bast", "Bast"),
-            new Reunion(1, 15, 00, "lundi", 3, "février", 2020, "Julie", "Bast"),
-            new Reunion(2, 14, 00, "vendredi", 31, "janvier", 2020, "Marco", "Bast"),
-            new Reunion(2, 15, 00, "mercredi", 4, "mars", 2020, "Loulou", "Bast"),
-            new Reunion(3, 14, 00, "lundi", 3, "février", 2020, "Marius", "Bast"),
-            new Reunion(3, 15, 00, "dimanche", 16, "février", 2020, "Thibault", "Bast"),
-            new Reunion(4, 18, 00, "dimanche", 1, "février", 2020, "Max", "Bast"),
-            new Reunion(5, 19, 00, "mercredi", 4, "mars", 2020, "Flavie", "Bast")
-    );*/
+        new Meeting("Reunion1", RoomGenerator.generateRooms().get(0), "10:00 AM", "Nov 12,2020", " olivier@lamzone.com,paul@lamzone.com"),
+        new Meeting("Reunion2", RoomGenerator.generateRooms().get(1), "03:00 PM","Jan 13,2020",  "katy@lamzone.com,paul@lamzone.com"),
+        new Meeting("Reunion3", RoomGenerator.generateRooms().get(2), "04:00 PM", "Mar 14,2020", "katy@lamzone.com,paul@lamzone.com")
+);
 
-    static List<Reunion> generateReunion() {
-        return new ArrayList<>(REUNIONCREATED);
+    static List<Meeting> generateMeetings() {
+        return new ArrayList<>(meetingList);
     }
 }
+
+
