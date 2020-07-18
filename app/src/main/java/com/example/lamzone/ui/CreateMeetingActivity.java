@@ -6,13 +6,18 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.lamzone.API.MeetingApiService;
 import com.example.lamzone.R;
 import com.example.lamzone.model.Room;
 import com.google.android.material.textfield.TextInputEditText;
+
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 public class CreateMeetingActivity extends AppCompatActivity {
@@ -21,7 +26,8 @@ public class CreateMeetingActivity extends AppCompatActivity {
     private Room mRoom;
     private MeetingApiService mApiService ;
 
-    @Bind(R.id.spinnerSalle)
+
+    @BindView(R.id.spinnerSalle)
     Spinner spinner ;
     @BindView(R.id.btn_back)
     ImageButton btn_back ;
@@ -41,11 +47,11 @@ public class CreateMeetingActivity extends AppCompatActivity {
     TextInputEditText text_add_mail;
     @BindView(R.id.btn_cancel)
     Button btn_cancel;
-    @Override
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_meeting);
-
+        ButterKnife.bind(this);
     }
 }

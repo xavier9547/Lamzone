@@ -1,7 +1,5 @@
 package com.example.lamzone.model;
 
-import java.util.Calendar;
-
 public class Room {
 
     private String mNameRoom;
@@ -12,5 +10,14 @@ public class Room {
         this.mNameRoom = mNameRoom;
         this.mRoomColor = mRoomColor;
 
+    }
+
+    public String getmNameRoom() {
+        return mNameRoom;
+    }
+
+
+    public int getmRoomColor() {
+        return mRoomColor;
     }
 }

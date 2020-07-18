@@ -1,10 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.lamzone.ui.MeetingListActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/filtre_date"
+            android:title="Filtrer par date "
+
+            />
+
+        <item
+            android:id="@+id/filtre_rooms"
+            android:title="Filtrer par lieu "
+            />
+
+    </group>
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/listeReunion"
+        android:title="Liste des réunions  "
+        />
+
 </menu>

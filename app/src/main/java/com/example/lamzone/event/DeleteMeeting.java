@@ -8,7 +8,7 @@ public class DeleteMeeting {
 
     public Meeting meeting ;
 
-    public DeleteMeetingEvent(Meeting meeting) {
+    public DeleteMeeting(Meeting meeting) {
         Log.d("DEBUG", "DeleteMeetingEvent: Delete Meeting from meetings list");
 
         this.meeting = meeting;
