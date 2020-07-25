@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.CreateMeetingActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="                            Lamzone"
+        app:titleTextColor="@android:color/white" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

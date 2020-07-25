@@ -62,15 +62,12 @@ public class MeetingListActivity extends AppCompatActivity {
 
         FloatingActionButton btnFab = findViewById(R.id.btnFab);
 
-        btnFab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnFab.setOnClickListener(view -> {
 
-                Log.d("DEBUG", "onClick:  Open Activity");
+            Log.d("DEBUG", "onClick:  Open Activity");
 
-                Intent intent = new Intent(MeetingListActivity.this , CreateMeetingActivity.class);
-                startActivity(intent);
-            }
+            Intent intent = new Intent(MeetingListActivity.this , CreateMeetingActivity.class);
+            startActivity(intent);
         });
     }
 

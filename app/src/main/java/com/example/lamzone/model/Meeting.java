@@ -5,7 +5,7 @@ public class Meeting {
     private Room mRoom;
     private String mHour;
     private String mDate;
-    private String mEmails;//max3
+    private String mEmails;
 
     public Meeting(String mSubject, Room mRoom, String mHour,String mDate, String mEmails) {
         this.mSubject = mSubject;
